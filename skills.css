@@ -1,0 +1,23 @@
+section.skills div.skills-line{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: space-between;
+}
+section.skills div.skills-line div.skills-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
+    /* background-color: #a39c9c; */
+    margin: 22px 0 22px 0;
+    width: 156px;
+    height: 118px;
+}
+
+section.skills div.skills-line div.skills-box ul {
+    margin: 15px;  
+    padding: 0;
+
+}

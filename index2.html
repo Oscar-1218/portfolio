@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            background-color: rgb(131, 136, 139);
+        }
+    </style>
+    <title>Pruebas</title>
+    
+</head>
+<body>
+
+
+<script>
+// exibeMensaje();
+// function exibeMensaje() { 
+//     var mensajeFueraDelIf = 'Caelum'; 
+//     if(true) { 
+//         var mensajeDentroDelIf = 'Alura'; 
+//         console.log(mensajeDentroDelIf)// Alura ;
+//     } 
+//     console.log(mensajeFueraDelIf); // Caelum 
+    
+//     console.log(mensajeDentroDelIf); // Alura 
+// }
+
+
+
+// void function() {
+//     console.log("o no tie");
+//     console.log(mensaje);
+// } ();
+// var mensaje;
+
+// exibeMensaje();
+// function exibeMensaje() {
+//     if(true) {
+//          var scopeFunction = 'Caelum';
+//          let scopeBlock = 'Alura';
+
+//         console.log (scopeBlock); // Alura
+//     }
+//     console.log (scopeFunction); // Caelum
+//     console.log (scopeBlock);  //-Da Error
+// }
+void function () {
+    const mensaje = 'Alura';
+    console.log (mensaje); // Alura
+    mensaje = 'Caelum'; //Aqui da error
+} ();
+
+</script>
+</body>
+</html>
+
