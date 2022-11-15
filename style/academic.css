@@ -11,9 +11,24 @@ section.academic div.courses{
     height: 200px;
     width: 300px;
 }
+ul.course-list{
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+}
+.imgCursos{
+    width: 120px;
+    height: 40px;
+}
+
 p{
     font-weight: 400;
-
+}
+h2{
+    margin-bottom: 1rem;
+    font-size: 20px;
 }
 .courses-line{
     display: flex;
@@ -25,9 +40,7 @@ section.academic div.courses ul li{
     margin: 32px;
     padding: 0;
 }
-section.academic div.courses ul li img:nth-child(1) {
-    /* margin-top: 18px; */
-}
+
 section.academic div.courses ul li.course-title h4{
     font-weight: 700;
     font-size: 16px;

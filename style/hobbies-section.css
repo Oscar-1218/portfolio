@@ -21,3 +21,23 @@ section.hobbies-section div.hobbies-line div.hobbies-box ul{
     padding: 0;
 
 }
+#cplasplas{
+    width: 28px;
+}
+#python{
+    width: 65px;
+    clip-path: inset(0 12px 0 12px );
+    margin-left: -9px;
+}
+
+
+#scalping{
+    width: 60px
+}
+#joystick{
+    width: 60px;
+    clip-path: inset(0 10px 0 10px );
+}
+#conosur{
+    background-color: white;
+}

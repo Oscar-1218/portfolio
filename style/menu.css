@@ -21,7 +21,25 @@
     display: flex;
     justify-content: space-between;
 }
+a{
+    cursor: pointer;
+    
+}
+.color-a:hover{
+    color: rgb(25, 85, 85);
+}
 
+.color-a {
+    color:#e48d2a;
+    text-decoration: none;
+    
+}
+a{
+    text-decoration: none;
+    /* color: black; */
+    font-size: 18px;
+    font-weight: 700;
+}
 
 section header {
     display: flex;

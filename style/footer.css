@@ -16,6 +16,10 @@ section.skills div.skills-line div.skills-box {
     height: 118px;
     /*display: contents;/* le quita los bordes*/ 
 }
+.haber{
+    height: 100px;
+    background-color: #6193d4;
+}
 
 #ulIdhtml1{
     width: 80px;
@@ -26,8 +30,13 @@ h2.bio{
 
 }
 
-.subsection-bio{
-    color: #b3aeac;
-    font-weight: 700;
-    font-size: initial;
+.bi-wrench-adjustable{
+    background-color: #6193d4;;
+}
+.rodape, #p2022, #firma{
+    background-color: #6193d4;
+}
+#firma{
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

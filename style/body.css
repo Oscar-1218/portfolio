@@ -1,0 +1,31 @@
+body {
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    width: 100vw;
+}
+.bodyClass{
+    background-color:  #e7c5af;
+    width: 100%;
+}
+
+ol, ul,li {
+    list-style: none;
+}
+
+*{
+    cursor:default;
+    /* overflow: hidden; */
+}
+
+h3{
+    font-size: 31px;
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+

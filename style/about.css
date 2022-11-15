@@ -1,0 +1,25 @@
+section.about{
+    background-color: #8cafdf;
+}
+.about-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h3.section-about{
+    font-weight: bold;
+    font-size: 55px;
+}
+.about-paragraph{
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 00.5rem;
+}
+
+section.about div.about-container img{
+    margin: 16px;
+}
+#miLogo{
+    border-radius: 15px;
+    width: 227px;
+}

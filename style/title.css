@@ -4,9 +4,10 @@ section header h3.menu-title{
 
 
 .subsection-bio{
-    color:rebeccapurple
+    color: #312926;
+    font-weight: 700;
+    font-size: initial;
 }
-
 section.menu nav li{
     font-size: 14px;
     font-weight: 400;
@@ -35,9 +36,16 @@ section.title div.title-div div.title-container ul{
     font-size: 14px;
 }
 
-/* section.title img.profile{
-    width: 140px;
-} */
+h5{
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    font-weight: 700;
+}
+h2{
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
 
 .section-title{
     font-weight: 700;
@@ -47,4 +55,21 @@ section.title div.title-div div.title-container ul{
 
 .banner {
     background-image: url("assets/bannerAlura5.jpg");
+}
+.profile{
+    width: 170px;
+}
+.liPar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.liPar li{
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+}
+.profile{
+    border-radius: 60px;
 }

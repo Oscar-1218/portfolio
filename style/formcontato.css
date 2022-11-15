@@ -16,6 +16,21 @@ section.formcontato div.contact div.contact-text h2.contact-title{
     padding: 10px;
    
 }
+.invisible{
+    display: none;
+}
+.input-mensaje-error {
+    font-weight: 600;
+    color: rgb(207, 25, 25);
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+h2{
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
 section.formcontato form{
     /* display: flex; */
     flex-direction: column;
@@ -63,3 +78,8 @@ form.form button{
     color: white;
     margin: 32px 0;
 }
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
