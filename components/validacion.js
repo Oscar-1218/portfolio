@@ -1,3 +1,8 @@
+let conversor = document.querySelector("conversor")
+console.log(conversor)
+
+let idioma = document.documentElement.lang;
+
 var envioOk = document.getElementById('MensajeEnviado');
 envioOk.classList.add('invisible'); 
 
@@ -11,7 +16,7 @@ document.querySelector('form').addEventListener('post',validarDatos);
 
 //Valida los datos de input's
 function valida(input){
-    const tipoDeInput = input.dataset.tipo //con dataset -> obtengo la coleccion de todos los data's y con la   extension .tipo es la que queremos traer.
+    const tipoDeInput = input.dataset.tipo //con dataset -> obtengo la coleccion de todos los data's y con la extension .tipo es la que queremos traer.
     if(input.validity.valid){  //-> True o false
         input.parentElement.querySelector(".input-mensaje-error").innerHTML = "";
         
@@ -23,17 +28,16 @@ function valida(input){
 
 
 
-
 const mensajesDeError = {
     nombre: { 
-        valueMissing: "El campo nombre no puede estar vacio"
+        valueMissing: idioma == 'es'? "El campo nombre no puede estar vacio":'name is required'
     },
     email: {
-        valueMissing: "El campo correo no puede estar vacio",
-        typeMismatch: "El correo no es valido"
+        valueMissing: idioma == 'es'? "El campo correo no puede estar vacio":'email is required',
+        typeMismatch: idioma == 'es'?"El correo no es valido":'Invalid email'
     },
     asunto:{
-        valueMissing: "Asunto no puede estar vacio."
+        valueMissing: idioma =='es'? "Asunto no puede estar vacio.":'subject is required'
     }
 }
 
@@ -59,11 +63,13 @@ const textoArea = document.querySelector('textarea');
 textoArea.addEventListener('blur', function() {
     let valor = textoArea.value;
     if (valor == "" ){
-        textoArea.parentElement.querySelector(".input-mensaje-error").innerHTML = "Campo Mensaje es obligatorio y debe contener máximo 400 carateres";
+        textoArea.parentElement.querySelector(".input-mensaje-error").innerHTML = 
+        idioma =='es'? "Campo Mensaje es obligatorio y debe contener máximo 400 carateres"
+        :"The message field is required and must contain a maximum of 400 characters"
         return;
     } 
     if (valor.length >= 40 ){
-        textoArea.parentElement.querySelector(".input-mensaje-error").innerHTML = "Demasiados caracteres, Max. permitido 400.";
+        textoArea.parentElement.querySelector(".input-mensaje-error").innerHTML = "Max. 400 characters.";
         return;
     }
     if(true){
@@ -77,24 +83,25 @@ function validarDatos(){
     window.event.preventDefault(delay);
     
     if (document.form.nombre.value=="" ) {
-        alert("Campo nombre y apellido es obligatorio")  
+        alert(idioma == 'es'?"Campo nombre y apellido es obligatorio":'Name and surname field is required') 
         document.form.nombre.focus()
         
     }else if (document.form.email.value=="") {
-        alert("Campo e-mail es obligatorio")
+        alert("e-mail required")
         document.form.email.focus() 
         
     }else if (document.form.asunto.value=="" ) {
-        alert("Campo Asunto es obligatorio")
+        idioma == 'es'?alert("Campo Asunto es obligatorio"):alert('subject is required')
         document.form.asunto.focus() 
         
     }else if (document.form.mensaje.value=="" || document.form.mensaje.value.length >= 400 ){
-        alert("Campo Mensaje es obligatorio y debe contener máximo 400 carateres") 
+        alert(idioma == 'es'?"Mensaje es obligatorio y debe contener máximo 400 carateres":
+        'The message is required and must contain a maximum of 400 characters')  
         document.form.mensaje.focus()
         
     } else if (document.form.email.value.indexOf('@')==-1 ||
     document.form.email.value.indexOf('.')==-1 ) {
-        alert("e-mail inválido")
+        alert("e-mail invalid")
     }  
 }
 

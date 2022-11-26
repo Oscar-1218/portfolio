@@ -1,7 +1,6 @@
 section.skills div.skills-line{
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
     justify-content: space-between;
 }
 section.skills div.skills-line div.skills-box{
@@ -10,14 +9,77 @@ section.skills div.skills-line div.skills-box{
     justify-content: flex-end;
     align-items: flex-start;
     padding: 16px;
-    /* background-color: #a39c9c; */
     margin: 22px 0 22px 0;
     width: 156px;
     height: 118px;
 }
 
+
+
+fx{
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  @-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpadeo {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+
+
+
+
+
+
+
 section.skills div.skills-line div.skills-box ul {
     margin: 15px;  
     padding: 0;
 
+}
+#cplasplas{
+    width: 28px;
+}
+#python{
+    width: 65px;
+    clip-path: inset(0 12px 0 12px );
+    margin-left: -9px;
+    
+}
+
+#bbdd{
+	width: 60px;
+    clip-path: inset(0 12px 0 12px );
+}
+
+#react {
+    width: 38px;
+}
+#arduino{
+    width: 38px;
+    clip-path: inset(3px 4px 3px 3px );
+    border-radius: 15px;
+}
+.skills-name{
+    color: #fff;
 }

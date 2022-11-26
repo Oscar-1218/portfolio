@@ -5,15 +5,18 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1;
-    width: 100vw;
 }
 .bodyClass{
-    background-color:  #e7c5af;
+    background:  #282c34;
     width: 100%;
 }
 
 ol, ul,li {
     list-style: none;
+}
+
+.icono-color{
+    color: red;
 }
 
 *{
@@ -27,5 +30,6 @@ h3{
     font-weight: bold;
     margin-bottom: 1rem;
 }
+
 
 

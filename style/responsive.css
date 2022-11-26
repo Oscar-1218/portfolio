@@ -208,7 +208,8 @@ section.skills div.skills-line div.skills-box {
         justify-content: space-between;
     }
     section.menu{
-        display: block;
+        display: flex;
+        justify-content: flex-end;
     }
     section.menu nav ul.menu-list{
         display: none;
@@ -221,7 +222,7 @@ section.skills div.skills-line div.skills-box {
     .headerHastaDropdown{
         margin-top: 15px;
     }
-    section.formcontato div.esquerda img.contact-img{
+    section.formcontato img.contact-img{
         display: none;
     }
 }
@@ -259,7 +260,7 @@ section.skills div.skills-line div.skills-box {
     }
 
     section.title div.title-div div.title-container h2 {
-        font-size: 52px;
+        font-size: 35px;
         font-weight: 700;
         line-height: 50px;
     }
@@ -289,7 +290,7 @@ section.title div.title-div div.title-container h3 {
 /*Sobre mi*/
     div.about-container{
         margin-bottom: 3rem;
-        height: 255px;
+        height: 320px;
     }
 
 /*Skills*/

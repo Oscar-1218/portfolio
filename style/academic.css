@@ -19,8 +19,11 @@ ul.course-list{
     max-width: 300px;
 }
 .imgCursos{
-    width: 120px;
+    width: 86px;
     height: 40px;
+}
+#conosur{
+    background: white;
 }
 
 p{
@@ -47,8 +50,14 @@ section.academic div.courses ul li.course-title h4{
     margin-top: -50px;
     text-align: start;
 }
+.course-title{ 
+    font-size: 20px;
+}
 section.academic div.courses ul li.course-subtitle{
     font-weight: 500;
     font-size: 14px;
     text-align: start;
+}
+.sub-title, .course-title{
+    color:#fff;
 }

@@ -10,7 +10,6 @@ section.hobbies-section div.hobbies-line div.hobbies-box{
     justify-content: flex-end;
     align-items: flex-start;
     padding: 16px;
-    /* background-color: #a39c9c; */
     margin: 15px 0 22px 0;
     width: 156px;
     height: 118px;
@@ -21,15 +20,6 @@ section.hobbies-section div.hobbies-line div.hobbies-box ul{
     padding: 0;
 
 }
-#cplasplas{
-    width: 28px;
-}
-#python{
-    width: 65px;
-    clip-path: inset(0 12px 0 12px );
-    margin-left: -9px;
-}
-
 
 #scalping{
     width: 60px
@@ -38,6 +28,6 @@ section.hobbies-section div.hobbies-line div.hobbies-box ul{
     width: 60px;
     clip-path: inset(0 10px 0 10px );
 }
-#conosur{
-    background-color: white;
+.hobbies-name{
+    color: #fff;
 }

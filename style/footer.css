@@ -1,5 +1,7 @@
 section.footer{
     height: 10vh;
+    display: flex;
+    justify-content: center
 }
 
 section.footer div.rodape{
@@ -7,6 +9,7 @@ section.footer div.rodape{
     font-size: 16px;
     line-height: 19px;
     text-align: center;
+    margin-top: 10px;
 }
 
 
@@ -18,23 +21,19 @@ section.skills div.skills-line div.skills-box {
 }
 .haber{
     height: 100px;
-    background-color: #6193d4;
+    background: #8cafdf;
 }
 
 #ulIdhtml1{
     width: 80px;
 }
  
-h2.bio{
-    color: rgb(228, 146, 47);
-
-}
 
 .bi-wrench-adjustable{
-    background-color: #6193d4;;
+    background-color: #8cafdf;
 }
 .rodape, #p2022, #firma{
-    background-color: #6193d4;
+    background-color: #8cafdf;
 }
 #firma{
     font-style: italic;

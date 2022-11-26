@@ -1,5 +1,4 @@
 section.formcontato{
-    /* background-color: #EAF2FD; */
     padding: 16px;
 }
 
@@ -11,7 +10,7 @@ section.formcontato div.contact div.contact-text h3.contact-subtext{
 }
 section.formcontato div.contact div.contact-text h2.contact-title{
     font-weight: 700;
-    text-decoration: underline wavy rgb(223, 45, 45);   /* Subrayado rojo ondulado */
+    text-decoration: underline wavy #8cafdf;   /* Subrayado rojo ondulado */
     font-size: 22px;
     padding: 10px;
    
@@ -36,13 +35,14 @@ section.formcontato form{
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
-    margin: 0;
+    margin-bottom: 2em;
 }
 section.formcontato form input{
     border: transparent;
     flex-grow: 1;
-    margin: 10px 0px;
-    height: 56px;
+    background: #8cafdf;
+    margin: 10px 0px 0px 0px;
+    height: 36px;
     width: 80vw;
 }
 form input::placeholder {
@@ -55,6 +55,7 @@ section.formcontato form input:focus{
 }
 section.formcontato form textarea{
     border: transparent;
+    background: #8cafdf;
     flex-grow: 1;
     margin: 10px 0px;
     height: 96px;
@@ -67,19 +68,16 @@ textarea::placeholder {
     color:#464646;
     font-family: 'Raleway'
 }
+
 form.form button{
-    border: transparent;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     padding: 12px 16px;
-    background-color:#2A7AE4; 
-    color: white;
-    margin: 32px 0;
 }
+
 textarea:focus, input:focus, select:focus {
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
 } 
+.contact-title ,.contact-subtext{
+    color: #fff;
+}

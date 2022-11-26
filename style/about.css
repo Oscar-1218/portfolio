@@ -1,5 +1,7 @@
 section.about{
-    background-color: #8cafdf;
+    background: #8cafdf;
+    padding: 15px;
+    border-radius: 20px;
 }
 .about-container{
     display: flex;
@@ -22,4 +24,23 @@ section.about div.about-container img{
 #miLogo{
     border-radius: 15px;
     width: 227px;
+}
+h2.bio{
+    color: rgb(228, 146, 47);
+}
+
+.color-a {
+    color:#e48d2a;
+    text-decoration: none;
+    display: flex;
+    align-items: baseline;
+}
+.color-icono{
+    color: #e48d2a;
+}
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
 }
